@@ -101,7 +101,7 @@ jobs:
 
       - name: Checkout code
         run: |
-          git clone --recursive -b beta git@github.com:Zellim-Project/zellim-desktop.git .
+          git clone --recursive -b release git@github.com:Zellim-Project/zellim-desktop.git .
 
       - name: Extract Git branch name from the currently checked out branch (not from the branch where this run was kicked off)
         run: echo "GIT_BRANCH_NAME=$(git rev-parse --abbrev-ref HEAD)" >> $GITHUB_ENV
